@@ -39,8 +39,10 @@ class SportsCar(Car):
         return info
 
 #_main_
-task1 = SportsCar("Hyundai", "Verna", 10000, 200.0)
-print(task1.get_info())
-print(task1.get_price())
-task1.set_price(20000)
-print(task1.get_price())
+car1 = Car("Toyota", "Corolla", 10000)
+car2 = ElectricCar("Tata", "Nexon", 20000, 500.0)
+car3 = SportsCar("Bugatti", "Chiron", 80000, 300.0)
+
+car_list = [car1, car2, car3]
+for i in car_list:
+    print(i.get_info())
